@@ -5,10 +5,10 @@ import ButtonsBox from './ButtonsBox';
 class Calculator extends React.Component {
   render() {
     return (
-        <div className="calculator">
-            <Output/>
-            <ButtonsBox/> 
-        </div>
+      <div className="calculator">
+          <Output/>
+          <ButtonsBox /> 
+      </div>
     );
   }
 }
