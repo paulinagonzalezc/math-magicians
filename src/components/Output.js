@@ -1,14 +1,12 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Output = (props) => {
-    return (
-      <div className="output">
-        {`${props.calculation.total || ''} ${props.calculation.operation || ''} ${props.calculation.next || ''}`}
-      </div>
-    );
-}
+  <div className="output">
+    {`${props.calculation.total || ''} ${props.calculation.operation || ''} ${props.calculation.next || ''}`}
+  </div>
+};
 
-// Output.propTypes = { state: PropTypes.string.isRequired };
+Output.propTypes = { calculation: PropTypes.object.isRequired };
 
 export default Output;

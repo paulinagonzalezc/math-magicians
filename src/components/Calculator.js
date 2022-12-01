@@ -21,6 +21,6 @@ const Calculator = () => {
       <ButtonsBox handleClick={handleClick} />
     </div>
   );
-}
+};
 
 export default Calculator;
