@@ -1,6 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class ButtonsBox extends React.PureComponent {
+  static get propTypes() { 
+    return {  
+        handleClick: PropTypes.func 
+    }; 
+  }
   render() {
     const { handleClick } = this.props;
     return (
