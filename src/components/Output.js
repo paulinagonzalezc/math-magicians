@@ -1,18 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-class Output extends React.PureComponent {
-  render() {
-    const { state } = this.props;
-    const { total, next, operation } = state;
+function Output(props) {
     return (
       <div className="output">
-        {`${total || ''} ${operation || ''} ${next || ''}`}
+        {`${props.calculation.total || ''} ${props.calculation.operation || ''} ${props.calculation.next || ''}`}
       </div>
     );
-  }
 }
 
-Output.propTypes = { state: PropTypes.string.isRequired };
+// Output.propTypes = { state: PropTypes.string.isRequired };
 
 export default Output;

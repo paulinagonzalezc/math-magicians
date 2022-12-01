@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class ButtonsBox extends React.PureComponent {
-  render() {
-    const { handleClick } = this.props;
+function ButtonsBox({ handleClick }) {
     return (
       <div className="buttons">
         <button onClick={handleClick} type="submit">AC</button>
@@ -27,7 +25,6 @@ class ButtonsBox extends React.PureComponent {
         <button onClick={handleClick} type="submit" className="operator">=</button>
       </div>
     );
-  }
 }
 
 ButtonsBox.propTypes = { handleClick: PropTypes.func.isRequired };
