@@ -7,8 +7,8 @@ function Output(props) {
       {`${props.calculation.total || ''} ${props.calculation.operation || ''} ${props.calculation.next || ''}`}
     </div>
   );
-};
+}
 
-Output.propTypes = { calculation:PropTypes.shape({total:PropTypes.string, operation:PropTypes.string, next:PropTypes.string}) };
+Output.propTypes = { calculation: PropTypes.func.isRequired };
 
 export default Output;
