@@ -30,6 +30,6 @@ class ButtonsBox extends React.PureComponent {
   }
 }
 
-ButtonsBox.propTypes = { handleClick: PropTypes.func.isRequired }
+ButtonsBox.propTypes = { handleClick: PropTypes.func.isRequired };
 
 export default ButtonsBox;

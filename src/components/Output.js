@@ -13,6 +13,6 @@ class Output extends React.PureComponent {
   }
 }
 
-Output.propTypes = { state: PropTypes.any.isRequired }
+Output.propTypes = { state: PropTypes.string.isRequired };
 
 export default Output;
