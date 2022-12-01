@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function ButtonsBox({ handleClick }) {
+const ButtonsBox = ({ handleClick }) => {
     return (
       <div className="buttons">
         <button onClick={handleClick} type="submit">AC</button>

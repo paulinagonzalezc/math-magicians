@@ -3,16 +3,15 @@ import Output from './Output';
 import ButtonsBox from './ButtonsBox';
 import calculate from '../logic/calculate';
 
-function Calculator() {
+const Calculator = () => {
   const [calculation, setCalculation] = useState({
-    total: 0,
+    total: '0',
     next: null,
     operation: null,
   });
 
   const handleClick = (event) => {
     const values = calculate(calculation, event.target.innerText);
-    console.log(values);
     setCalculation(values);
   };
 
