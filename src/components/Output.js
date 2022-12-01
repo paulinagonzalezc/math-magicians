@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Output extends React.PureComponent {
-
   render() {
     const { state } = this.props;
     const { total, next, operation } = state;
@@ -12,5 +12,7 @@ class Output extends React.PureComponent {
     );
   }
 }
+
+Output.propTypes = { state: PropTypes.any.isRequired }
 
 export default Output;

@@ -2,11 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class ButtonsBox extends React.PureComponent {
-  static get propTypes() { 
-    return {  
-        handleClick: PropTypes.func 
-    }; 
-  }
   render() {
     const { handleClick } = this.props;
     return (
@@ -34,5 +29,7 @@ class ButtonsBox extends React.PureComponent {
     );
   }
 }
+
+ButtonsBox.propTypes = { handleClick: PropTypes.func.isRequired }
 
 export default ButtonsBox;
