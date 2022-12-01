@@ -22,7 +22,7 @@ const ButtonsBox = ({ handleClick }) => {
     <button onClick={handleClick} type="submit" className="span-two">0</button>
     <button onClick={handleClick} type="submit">.</button>
     <button onClick={handleClick} type="submit" className="operator">=</button>
-  </div>
+  </div>;
 };
 
 ButtonsBox.propTypes = { handleClick: PropTypes.func.isRequired };
