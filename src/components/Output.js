@@ -2,9 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Output(props) {
+  const { calculation } = props;
+  const { total, next, operation } = calculation;
   return (
     <div className="output">
-      {`${props.calculation.total || ''} ${props.calculation.operation || ''} ${props.calculation.next || ''}`}
+      {`${total || ''} ${operation || ''} ${next || ''}`}
     </div>
   );
 }
