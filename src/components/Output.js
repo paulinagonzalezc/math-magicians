@@ -2,9 +2,10 @@ import React from 'react';
 
 class Output extends React.PureComponent {
   render() {
+    const { total, next, operation } = this.props.state;
     return (
       <div className="output">
-        0
+        {`${total || ''} ${operation || ''} ${next || ''}`}
       </div>
     );
   }
