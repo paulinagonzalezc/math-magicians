@@ -8,14 +8,14 @@ import Quote from './components/Quote';
 
 const App = () => (
   <BrowserRouter>
-    <>
+    <div className="component-body">
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/quote" element={<Quote />} />
       </Routes>
-    </>
+    </div>
   </BrowserRouter>
 );
 
