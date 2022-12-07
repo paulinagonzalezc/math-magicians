@@ -53,6 +53,7 @@
 
 - **Make calculations**
 - **Read a random math-related quote**
+- **Navigation through pages**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -124,9 +125,8 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Home Page**
-- [ ] **Quotes Page**
-- [ ] **Navigation through pages**
+- [ ] **Advanced styling**
+- [ ] **Animations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
