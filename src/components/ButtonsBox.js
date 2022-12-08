@@ -9,7 +9,7 @@ const ButtonsBox = ({ handleClick }) => (
     <button onClick={handleClick} type="submit">
       +/-
     </button>
-    <button onClick={handleClick} type="submit">
+    <button onClick={handleClick} type="submit" id="button">
       %
     </button>
     <button onClick={handleClick} type="submit" className="operator">
