@@ -1,4 +1,4 @@
-import operate from '../logic/operate'
+import operate from '../logic/operate';
 
 describe('Testing suite for operate', () => {
   it('Sums', () => {
@@ -16,5 +16,4 @@ describe('Testing suite for operate', () => {
   it('Divides', () => {
     expect(operate(4, 2, '÷')).toBe('2');
   });
-
 });
